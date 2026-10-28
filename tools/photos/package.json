@@ -1,0 +1,10 @@
+{
+  "name": "naturailes-photos",
+  "private": true,
+  "description": "Generates the published images from the originals (not needed to build the site)",
+  "type": "module",
+  "dependencies": {
+    "opentype.js": "^2.0.0",
+    "sharp": "^0.35.5"
+  }
+}

@@ -1,0 +1,3 @@
+[submodule "originals"]
+	path = originals
+	url = git@github.com:fqueze/naturailes-private.git

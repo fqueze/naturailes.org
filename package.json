@@ -1,0 +1,9 @@
+{
+  "name": "naturailes.org",
+  "private": true,
+  "description": "www.naturailes.org, Daniel Quèze's nature photos",
+  "type": "module",
+  "scripts": {
+    "photos": "node tools/photos/photos.mjs"
+  }
+}
