@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="flux.xsl"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Natur'Ailes.org - essai</title>
+ <link>https://www.naturailes.org/t1-essai.html</link>
+ <language>fr</language>
+ <description>Natur'Ailes.org/essai : </description>
+
+</channel>
+</rss>

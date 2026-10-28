@@ -1,0 +1,188 @@
+Name=NewLook
+Description=Les super beaux smileys de Tintin ;-) v2.0
+Icon=sourire.png
+Author=Tintin
+
+[default]
+sourire.png		:-)	:)
+sourire2.png		^^	^_^
+triste.png		:-(	:(
+clin_d'oeil.png		;-)	;)
+neutre.png		:-|	:|
+pense.png		:-/
+! pense2.png		:-\
+pleure.png		:'-(	:'(
+langue.png		:-P	:-p
+cri.png			=-O	=-o
+bisou.png		:-*
+hurle.png		>:o	>:O
+cool.png		8-)
+gene.png		:-]
+embarrasse.png		:-[
+embarrasse2.png		:-S	:-s	:-$
+pas_parler.png		:-X	:-x
+rire.png		:-D
+rire&pleurs.png		:'-D	:,-D	:'D	:,D
+ange.png		O:-)
+sarcastique.png		o_ô	^o)
+! sarcastique2.png	ô_o
+-_-.png			-_-
+-_-'.png		-_-'
+oulala.png		>_<
+O_o1.png		O_o
+! o_O2.png		o_O
+O_O.png			O_O	o_o	0_0
+x_x.png			x_x	X_X
+goute.png		^^'	^^"	^^;
+XD.png			XD
+bigsmile.png		(bigsmile)
+OK.png			(OK)
+KO.png			(KO)
+censored.png		(censored)
+hum.png			(hum!)
+vomit.gif		(vomit)
+eureka.png		eurêka!	eureka!
+dodo.png		ZzZz	zZzZ	zzzz	ZZZZ
+comprends_pas.png	???
+coeur.png		<3
+fleche_droite.png	-->	->
+je_sors.gif		--->[]
+mouais.png		(mouais)
+lol.png			LOL
+kezako.png		kézako?	Kézako?	kezako?	Kezako?
+meheu.png		méheu!	Méheu!	meheu!	Meheu!
+archnibilibili.png	archnibilibili	Archnibilibili
+mouhahaha.png		mouhahaha	Mouhahaha
+blablabla.gif		blablabla	Blablabla
+nyarknyark.png		(nyark_nyark)	(nyarknyark)
+! arretez-moi.png	(arrêtez-moi)	(arretez-moi)
+! cyclope.png		O-)	o-)	0-)
+! lol.gif		lol
+! fleche_gauche.png	<--	<-
+! fleche_double.png	<->	<-->
+
+
+[MSN]
+sourire.png		:-)	:)
+triste.png		:-(	:(	:-<
+clin_d'oeil.png		;-)	;)
+neutre.png		:-|	:|
+pleure.png		:'(	:'-(
+langue.png		:-P	:-p
+embarrasse.png		:$	:-$
+embarrasse2.png		:-S	:-s
+rire.png		:-D	:-d	:->	:>
+ange.png		(a)	(A)	O:-)
+sarcastique.png		^o)	o_ô
+msn_angry.png		:-@	:@
+msn_bat.gif		:-[	:[
+msn_beer.png		(B)	(b)
+msn_bowl.png		(||)
+msn_boy.png		(Z)	(z)
+msn_brb.png		(brb)
+msn_brheart.png		(U)	(u)
+msn_cake.gif		(^)
+msn_car.png		(au)
+msn_cat.png		(@)
+msn_cellphone.png	(mp)
+msn_cigarette.gif	(ci)
+msn_clock.png		(o)	(O)
+msn_coffee.png		(C)	(c)
+msn_coins.png		(mo)
+msn_computer.png	(co)
+msn_deadflower.png	(W)	(w)
+msn_devil.png		(6)
+msn_dog.png		(&)
+msn_dontknow.gif	:^)
+msn_donttell.png	:-#
+msn_drink.png		(D)	(d)
+msn_email.png		(e)	(E)
+msn_eyeroll.gif		8-)
+msn_film.png		(~)
+msn_fingerscrossed.png	(yn)
+msn_flower.png		(F)	(f)
+msn_gift.png		(g)	(G)
+msn_girl.png		(X)	(x)
+msn_handcuffs.png	(%)
+msn_heart.png		(L)	(l)
+msn_highfive.png	(h5)
+msn_hot.png		(H)	(h)
+msn_icon.png		(M)	(m)
+msn_idea.png		(I)	(i)
+msn_island.png		(ip)
+msn_kiss.png		(K)	(k)
+msn_lightning.gif	(li)
+msn_nerd.png		8-|
+msn_note.png		(8)
+msn_ooooh.png		:-O	:O	:-o	:o
+msn_party.gif		<:o)
+msn_phone.png		(T)	(t)
+msn_photo.png		(P)	(p)
+msn_pizza.png		(pi)
+msn_plane.png		(ap)
+msn_plate.png		(pl)
+msn_question.png	(?)
+msn_rainbow.png		(r)	(R)
+msn_run.png		({)
+msn_runback.png		(})
+msn_secret.png		:-*
+msn_sheep.png		(bah)
+msn_sick.png		+o(
+msn_sleep.png		(S)
+msn_sleepy.gif		|-)
+msn_snail.png		(sn)
+msn_soccer.png		(so)
+msn_star.png		(*)
+msn_stormy.png		(st)
+msn_sun.png		(#)
+msn_teeth.png		8o|
+msn_think.gif		*-)
+msn_thumbdown.png	(N)	(n)
+msn_thumbup.png		(Y)	(y)
+msn_turtle.png		(tu)
+msn_umbrella.png	(um)
+msn_xbox.png		(xx)
+! sourire2.png		^^	^_^
+! pense.png		:-/
+! pense2.png		:-\
+! cri.png		=-O	=-o
+! bisou.png		:-*
+! hurle.png		>:o	>:O
+! cool.png		8-)
+! gene.png		:-]
+! pas_parler.png	:-X	:-x
+! rire&pleurs.png	:'-D	:,-D	:'D	:,D
+! sarcastique2.png	ô_o
+! -_-.png		-_-
+! -_-'.png		-_-'
+! oulala.png		>_<
+! O_o1.png		O_o
+! o_O2.png		o_O
+! O_O.png		O_O	o_o	0_0
+! goute.png		^^'	^^"	^^;
+! XD.png		XD
+! bigsmile.png		(bigsmile)
+! OK.png		(OK)
+! KO.png		(KO)
+! censored.png		(censored)
+! hum.png		(hum!)
+! vomit.gif		(vomit)
+! eureka.png		eurêka!	eureka!
+! dodo.png		ZzZz	zZzZ	zzzz	ZZZZ
+! comprends_pas.png	???
+! coeur.png		<3
+! je_sors.gif		--->[]
+! mouais.png		(mouais)
+! lol.png		LOL
+! kezako.png		kézako?	Kézako?	kezako?	Kezako?
+! meheu.png		méheu!	Méheu!	meheu!	Meheu!
+! archnibilibili.png	archnibilibili	Archnibilibili
+! mouhahaha.png		mouhahaha	Mouhahaha
+! blablabla.gif		blablabla	Blablabla
+! nyarknyark.png	(nyark_nyark)	(nyarknyark)
+! arretez-moi.png	(arrêtez-moi)	(arretez-moi)
+! cyclope.png		O-)	o-)	0-)
+! lol.gif		lol
+! fleche_droite.png	-->	->
+! fleche_gauche.png	<--	<-
+! fleche_double.png	<->	<-->
