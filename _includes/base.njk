@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+ <title>Natur'Ailes.org</title>
+ <meta name="description" content="Site des photos de Daniel Quèze" />
+ <meta name="author" content="Daniel &amp; Florian Quèze" />
+ <meta name="keywords" content="daniel, florian, queze, photo, naturailes, nature, oiseau, aile, ailes, mésanges, insecte, insectes, mésange, mesange, mesanges, marais, paysage, objectif, flash, flashes, chevaux, eau, plume, plumes" />
+ <meta charset="UTF-8" />
+ <link rel="stylesheet" type="text/css" href="css.css" />
+ <link rel="alternate" type="application/rss+xml" title="Natur'Ailes.org" href="flux.rss" />
+{%- set category = pageList.category if pageList else null %}
+{%- if category %}
+ <link rel="alternate" type="application/rss+xml" title="{{ category.label }}{% if category.desc %} : {{ category.desc | ucfirst }}{% endif %}" href="{{ category.feedUrl }}" />
+{%- endif %}
+</head>
+<body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
+ <div class="titre">
+  <h1 class="bigtitre">
+   <a href="./"><img src="img/titre.jpg" height="70" alt="Natur'Ailes.org" /></a>
+  </h1>
+ </div>
+{{ content | safe }}
+<div class="nav">
+<a href="./">Accueil</a>
+
+<h1>Catégories</h1>
+<ul class="cat">
+{%- for cat in collections.site.navCategories %}
+ <li><a href="{{ cat.url }}"{% if cat.desc %} title="{{ cat.desc }}"{% endif %}>{{ cat.label }}</a> : ({{ cat.posts.length }})</li>
+{%- endfor %}
+</ul>
+<a href="mailto:naturailes@queze.net">Nous écrire</a><br /><br />
+Copyright : <a href="mailto:daniel@naturailes.org" style="display:inline;">Daniel</a> et <a href="mailto:florian@naturailes.org" style="display:inline;">Florian</a> Quèze - 2005-2010
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+---
+pagination:
+  data: collections.site.categoryPages
+  size: 1
+  alias: pageList
+permalink: "{{ pageList.url }}"
+layout: base.njk
+linkKind: c
+showPageList: true
+---
+<h1>{{ pageList.category.label }}</h1>
+{%- if pageList.category.desc %}
+<p>{{ pageList.category.desc | ucfirst }}</p>
+{%- endif %}
+{% include "thumbnails.njk" %}

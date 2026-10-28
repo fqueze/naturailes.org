@@ -1,0 +1,10 @@
+---
+pagination:
+  data: collections.site.homePages
+  size: 1
+  alias: pageList
+permalink: "{{ pageList.url }}"
+layout: base.njk
+linkKind: a
+---
+{% include "thumbnails.njk" %}

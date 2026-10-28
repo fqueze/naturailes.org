@@ -1,0 +1,31 @@
+---
+pagination:
+  data: collections.site.feeds
+  size: 1
+  alias: feed
+permalink: "{{ feed.url }}"
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="flux.xsl"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>{{ feed.title | xml | safe }}</title>
+ <link>{{ feed.link }}</link>
+ <language>fr</language>
+ <description>{{ feed.desc | xml | safe }}</description>
+{% for item in feed.items %}
+ <item>
+  <title>{{ item.title | xml | safe }}</title>
+  <guid>{{ item.guid }}</guid>
+  <link>{{ item.link }}</link>
+  <description>
+{% set html %}<p><a href="{{ site.url }}{{ item.post.urls.c }}"><img src="{{ site.url }}mini{{ item.post.id }}.jpg" alt="{{ item.post.title | xml | safe }}" /></a></p>
+   {{ item.post.message | smile(site.url) | safe }}{% endset %}{{ html | xml | safe }}
+</description>
+  <pubDate>{{ item.date }}</pubDate>
+  <dc:creator>{{ item.post.author | ucfirst }} &lt;{{ item.post.email }}&gt;</dc:creator>
+ </item>
+{% endfor %}
+</channel>
+</rss>

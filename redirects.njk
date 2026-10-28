@@ -1,0 +1,19 @@
+---
+pagination:
+  data: collections.site.redirects
+  size: 1
+  alias: redirect
+permalink: "{{ redirect.from }}"
+---
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Natur'Ailes.org</title>
+ <meta http-equiv="refresh" content="0; url={{ redirect.to }}" />
+ <link rel="canonical" href="{{ site.url }}{{ redirect.to | replace('./', '') }}" />
+</head>
+<body>
+ <p><a href="{{ redirect.to }}">{{ site.url }}{{ redirect.to | replace('./', '') }}</a></p>
+</body>
+</html>

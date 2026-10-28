@@ -1,0 +1,24 @@
+{%- if showPageList and pageList.count > 1 %}
+<h2>Page :
+{%- if pageList.number > 1 %}
+ <a href="{{ pageList.pageUrl(pageList.number - 1) }}" title="Page précédente">Précédente</a>
+{%- endif %}
+{%- for i in range(1, pageList.count + 1) %}
+{%- if i == pageList.number %}
+ <strong>{{ i }}</strong>
+{%- else %}
+ <a href="{{ pageList.pageUrl(i) }}" title="Page {{ i }}">{{ i }}</a>
+{%- endif %}
+{%- endfor %}
+{%- if pageList.number < pageList.count %}
+ <a href="{{ pageList.pageUrl(pageList.number + 1) }}" title="Page suivante">Suivante</a>
+{%- endif %}
+</h2>
+{%- endif %}
+<div>
+{%- for post in pageList.posts %}
+ <a class="photo" href="{{ post.urls[linkKind] }}" title="{{ post.category.label }} : {{ post.title }}">
+  <img src="{{ post.thumb }}" alt="{{ post.title }}" />
+ </a>
+{%- endfor %}
+</div>

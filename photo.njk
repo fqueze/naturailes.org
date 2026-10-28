@@ -1,0 +1,34 @@
+---
+pagination:
+  data: collections.site.photoPages
+  size: 1
+  alias: photoPage
+permalink: "{{ photoPage.url }}"
+layout: base.njk
+bodyClass: photopage
+---
+{%- set post = photoPage.post %}
+{%- set nav = post.nav[photoPage.kind] %}
+{%- set big = post.sizes | last %}
+<div class="partimg"><div>
+<img src="{{ big.file }}" srcset="{{ post | srcset }}" sizes="{{ post | sizesAttr }}" width="{{ big.width }}" height="{{ big.height }}" alt="{{ post.title }}" />
+{%- if nav.prev %}
+<a id="lnprec" href="{{ nav.prev.url }}" title="Photo précédente">&nbsp;</a>
+{%- endif %}
+{%- if nav.next %}
+<a id="lnsuiv" href="{{ nav.next.url }}" title="Photo suivante">&nbsp;</a>
+{%- endif %}
+</div></div>
+<div class="post">
+<h1><a href="{{ post.category.url }}" title="Voir les photos de la catégorie {{ post.category.label }}">{{ post.category.label }}</a> : {{ post.title | smile | safe }}</h1>
+{{ post.message | smile | safe }}
+<h3>Posté le {{ post.date }} à {{ post.time }} par <a href="mailto:{{ post.email }}">{{ post.author | ucfirst }}</a>.
+{%- if photoPage.kind == "n" and post.comments.length %} <a href="{{ post.urls.c }}" title="Voir les commentaires"><em>{{ post.comments.length }} commentaire{% if post.comments.length > 1 %}s{% endif %}</em></a>{% endif %}</h3>
+{%- if photoPage.kind != "n" %}
+{%- for comment in post.comments %}
+<hr />
+<h3>{{ comment.title | smile | safe }} : <span style="font-weight:normal">commentaire de <em>{{ comment.author | safe }}</em> envoyé le {{ comment.date }} à {{ comment.time }}.</span></h3>
+{{ comment.message | smile | safe }}
+{%- endfor %}
+{%- endif %}
+</div>

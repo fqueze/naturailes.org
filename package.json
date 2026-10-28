@@ -4,6 +4,11 @@
   "description": "www.naturailes.org, Daniel Quèze's nature photos",
   "type": "module",
   "scripts": {
-    "photos": "node tools/photos/photos.mjs"
+    "photos": "node tools/photos/photos.mjs",
+    "build": "eleventy --quiet",
+    "serve": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.7"
   }
 }

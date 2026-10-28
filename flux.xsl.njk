@@ -1,0 +1,49 @@
+---
+permalink: flux.xsl
+---
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+ <xsl:template match="/">
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;
+<html>
+<head>
+ <title>Natur'Ailes.org</title>
+ <meta name="description" content="Site des photos de Daniel Quèze" />
+ <meta name="author" content="Daniel &amp; Florian Quèze" />
+ <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" type="text/css" href="css.css" />
+ <script language="javascript" src="xsl_mop-up.js"/>
+</head>
+<body onload="go_decoding();">
+  <div id="cometestme" style="display:none;">
+   <xsl:text disable-output-escaping="yes" >&amp;amp;</xsl:text>
+  </div>
+
+ <div class="titre">
+  <h1 class="bigtitre">
+   <img src="img/titre.jpg" height="70" alt="Natur'Ailes.org" />
+  </h1>
+ </div>
+
+  <xsl:for-each select="rss/channel/item">
+   <div class="post" name="decodeable">
+    &lt;h1&gt;<xsl:value-of select="title" />&lt;/h1&gt;
+    <xsl:value-of select="description" disable-output-escaping="yes" />
+   </div>
+  </xsl:for-each>
+
+<div class="nav">
+<a href="/">Accueil</a>
+
+<h1>Catégories</h1>
+<ul class="cat">
+{%- for cat in collections.site.navCategories %}
+ <li><a href="{{ cat.url }}"{% if cat.desc %} title="{{ cat.desc | xml | safe }}"{% endif %}>{{ cat.name | xml | safe }}</a> : ({{ cat.posts.length }})</li>
+{%- endfor %}
+</ul>
+<a href="mailto:naturailes@queze.net">Nous écrire</a><br /><br />
+Copyright : <a href="mailto:daniel@naturailes.org" style="display:inline;">Daniel</a> et <a href="mailto:florian@naturailes.org" style="display:inline;">Florian</a> Quèze - 2005-2010
+</div>
+</body>
+</html>
+ </xsl:template>
+</xsl:stylesheet>
